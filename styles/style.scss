@@ -1,0 +1,43 @@
+@import 'partials/setup';
+@import 'partials/base';
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 25px 0;
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        li {
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            transition: 0.3s;
+        }
+        li:hover {
+            border-bottom: 1px solid red;
+            padding-bottom: 10px;
+            transition: 0.3s;
+        }
+    }
+}
+
+
+.main-banner {
+    text-align: center;
+    h1 {
+        color:$secondary-color;
+        font-size: 72px;
+        text-align: center;
+        margin: 25px;
+    }
+    blockquote {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    button {
+        background: none;
+        padding: 10px 50px;
+        margin: 30px;
+    }
+}
