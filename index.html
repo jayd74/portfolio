@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
     <title>Jason Du Portfolio</title>
 </head>
 <body>
 
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
 
         <header>
             <h5 class="logo">Jason Du</h3>
+
+            <img src="images/x-grey.png" alt="" class="bg-shapes" id="x-grey">
+
             <nav>
                 <ul>
                     <li><a href="#home">home</a></li>
@@ -25,97 +30,141 @@
             </nav>
         </header>
         <section class="main-banner">
-            <h1>Jason Du</h1>
-            <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus cumque quidem ea aperiam cum facilis voluptates explicabo doloremque provident ipsa!</blockquote>
-            <button>contact</button>
+            <div class="shapes-bg">
+                <div class="wrapper">
+                    <h1>Jason Du</h1>
+                    <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus cumque quidem ea aperiam cum facilis voluptates explicabo doloremque provident ipsa!</blockquote>
+                    <button>contact</button>
+                </div>    
+                <!-- background shapes for design -->
+                <img src="images/square.png" alt="" class="bg-shapes" id="square">
+                <img src="images/circle.png" alt="" class="bg-shapes" id="circle">
+                <img src="images/squiggle-blue.png" alt="" class="bg-shapes" id="squiggle-blue">
+                <img src="images/squiggle-green.png" alt="" class="bg-shapes" id="squiggle-green">
+                <img src="images/triangle.png" alt="" class="bg-shapes" id="triangle">
+                <img src="images/diamond.png" alt="" class="bg-shapes" id="diamond">
+                <!-- end background shapes -->
+            </div>
         </section>
         
         <section class="skills">
-            <div class="skill-item">
-                <h3>Some Skill</h3>
-                <p>something about the skill</p>
-                <button></button>
-            </div>
-            <div class="skill-item">
-                <h3>Some Skill</h3>
-                <p>something about the skill</p>
-                <button></button>
-            </div>
-            <div class="skill-item">
-                <h3>Some Skill</h3>
-                <p>something about the skill</p>
-                <button></button>
-            </div>
-            <div class="skill-item">
-                <h3>Some Skill</h3>
-                <p>something about the skill</p>
-                <button></button>
+            <div class="wrapper skills-container">
+                <div class="skill-item">
+                    <i class="fab fa-android"></i>
+                    <h3>Some Skill</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto ex, voluptatem quaerat soluta omnis.</p>
+                    <button>button</button>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-android"></i>
+                    <h3>Some Skill</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto ex, voluptatem quaerat soluta omnis.</p>
+                    <button>button</button>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-android"></i>
+                    <h3>Some Skill</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto ex, voluptatem quaerat soluta omnis.</p>
+                    <button>button</button>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-android"></i>
+                    <h3>Some Skill</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto ex, voluptatem quaerat soluta omnis.</p>
+                    <button>button</button>
+                </div>
             </div>
         </section>
         
-        <section class="projects">
-            <div class="project-item"></div>
-            <div class="project-item"></div>
-            <div class="project-item"></div>
-            <div class="project-item"></div>
-            <div class="project-item"></div>
-            <button>projects</button>
-        </section>
+        <section class="projects-section">
+        <div class="wrapper projects"> 
+                <img src="images/squiggle.png" alt="" class="bg-shapes" id="squiggle">
 
-        <section class="stats">
-            <div class="stat-item">
-                <h3>123</h3>
-                <h5>Wakatime Hours</h5>
-            </div>
-            <div class="stat-item">
-                <h3>123</h3>
-                <h5>Coffees Consumed</h5>
-            </div>
-            <div class="stat-item">
-                <h3>123</h3>
-                <h5>Walks Taken</h5>
-            </div>
-            <div class="stat-item">
-                <h3>123</h3>
-                <h5>High Fives</h5>
+                <h4>Projects</h4>
+                <div class="projects-container">
+                    <div class="project-item"></div>
+                    <div class="project-item middle-project"></div>
+                    <div class="project-item "></div>
+                    <div class="project-item"></div>
+                    <div class="project-item"></div>
+                </div>
+                <button>projects</button>
             </div>
         </section>
 
-        <section class="about-me">
-            <div class="profile-pic">
-                <img src="images/jason.png" alt="asian guy named jason du">
-            </div>
-            <div class="bio">
-                <h4>About Me</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque nemo dolore est aliquid accusamus officiis deserunt quidem, excepturi temporibus, placeat quo ad. Excepturi perferendis itaque dolore blanditiis accusamus error est modi necessitatibus consequuntur quos! Repellat necessitatibus similique animi a inventore mollitia, dolore perferendis voluptates veniam vero, voluptatem non maxime molestiae?</p>
+        <section class="stats-section">
+            <div class="wrapper stats">
+
+                <div class="stat-item">
+                    <h3 class="stat1">123</h3>
+                    <h5>Wakatime Hours</h5>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat2">123</h3>
+                    <h5>Coffees Consumed</h5>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat3">123</h3>
+                    <h5>Walks Taken</h5>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat4">123</h3>
+                    <h5>High Fives</h5>
+                </div>
             </div>
         </section>
-        <section class="coding-languages">
-            <div class="code-logo"><img src="" alt="logo for html"></div>
-            <div class="code-logo"><img src="" alt="logo for css"></div>
-            <div class="code-logo"><img src="" alt="logo for jquery"></div>
-            <div class="code-logo"><img src="" alt="logo for javascript"></div>
-            <div class="code-logo"><img src="" alt="logo for react"></div>
-            <div class="code-logo"><img src="" alt="logo for github"></div>
-            <div class="code-logo"><img src="" alt="logo for firebase"></div>
-            <div class="code-logo"><img src="" alt="logo for sass"></div>
-            <div class="code-logo"><img src="" alt="logo for gulp"></div>
-            <div class="code-logo"><img src="" alt="logo for hackeryou"></div>
+
+        <section class="about">
+            <div class="wrapper about-me">
+                <div class="profile-pic">
+                    <img src="images/jason.png" alt="asian guy named jason du">
+                </div>
+                <div class="bio">
+                    <h4>About Me</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque nemo dolore est aliquid accusamus officiis deserunt quidem, excepturi temporibus, placeat quo ad. Excepturi perferendis itaque dolore blanditiis accusamus error est modi necessitatibus consequuntur quos! Repellat necessitatibus similique animi a inventore mollitia, dolore perferendis voluptates veniam vero, voluptatem non maxime molestiae?</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="languages">
+            <div class="wrapper coding-languages">
+
+                <div class="code-logo"><img src="images/html5.svg" alt="logo for html"></div>
+                <div class="code-logo"><img src="images/css3.svg" alt="logo for css"></div>
+                <div class="code-logo"><i class="devicon-jquery-plain-wordmark colored"></i>
+                </div>
+                <div class="code-logo"><i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="code-logo"><i class="devicon-react-original-wordmark colored"></i>
+                </div>
+                <div class="code-logo"><i class="devicon-github-plain-wordmark"></i>
+                </div>
+                <div class="code-logo"><img src="images/firebase.svg" alt="logo for firebase"></div>
+                <div class="code-logo"><i class="devicon-sass-original colored"></i>
+                </div>
+                <div class="code-logo"><i class="devicon-gulp-plain colored"></i>
+                </div>
+                <div class="code-logo"><img src="images/vscode.svg" alt="logo for vscode">
+                </div>
+            </div>
         </section>
         <footer class="contact">
-            <p>hit me up at</p>
-            <h2>hello@jasondu.ca</h2>
-            <div class="social-media">
-                <ul>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
-                    <li><i class="fab fa-github"></i></li>
-                    <li><i class="fab fa-facebook"></i></li>
+            <div class="wrapper">
+                <p>hit me up at</p>
+                <h2>hello@jasondu.ca</h2>
+                <ul class="social-media">
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <!-- <li><img src="images/instagram.png" alt="logo for instagram"></li> -->
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-github"></i></li>
+                        <li><i class="fab fa-facebook-f"></i></li>
                 </ul>
             </div>
         </footer>
-    </div> <!--end wrapper-->
-
+    <!-- </div> end wrapper -->
+<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+<script src="js/script.js"></script>
 </body>
 </html>

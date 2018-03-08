@@ -133,12 +133,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  background: black;
+  background: #0e0e0e;
   color: white;
   font-family: 'Montserrat', sans-serif; }
 
 .wrapper {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto; }
 
 ul, li {
@@ -153,7 +153,21 @@ button {
   color: white;
   border: 1px solid white; }
 
+h1 {
+  color: #d12026;
+  font-size: 72px;
+  text-align: center;
+  margin: 25px; }
+
+h4 {
+  font-size: 50px; }
+
+section {
+  width: 100%;
+  margin: 100px 0; }
+
 header {
+  background: url("../images/pattern-dots.png") no-repeat right;
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 25px 0; }
@@ -162,20 +176,47 @@ header {
     justify-content: space-around; }
     header nav ul li {
       padding-bottom: 10px;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid #0e0e0e;
       transition: 0.3s; }
     header nav ul li:hover {
       border-bottom: 1px solid red;
       padding-bottom: 10px;
       transition: 0.3s; }
+  header #x-grey {
+    top: 50px;
+    left: 450px; }
+
+.bg-shapes {
+  position: absolute; }
 
 .main-banner {
-  text-align: center; }
-  .main-banner h1 {
-    color: #d12026;
-    font-size: 72px;
-    text-align: center;
-    margin: 25px; }
+  background: url("../images/hello-bg.png") no-repeat left;
+  text-align: center;
+  position: relative;
+  padding: 100px 0;
+  margin: 0; }
+  .main-banner .shapes-bg {
+    background: url("../images/dotted-half-circle.png") no-repeat right bottom;
+    position: relative;
+    padding: 50px 0; }
+    .main-banner .shapes-bg #square {
+      top: 50px;
+      left: 150px; }
+    .main-banner .shapes-bg #circle {
+      bottom: 0px;
+      right: 300px; }
+    .main-banner .shapes-bg #squiggle-blue {
+      top: 0px;
+      right: 600px; }
+    .main-banner .shapes-bg #squiggle-green {
+      left: 100px;
+      top: 200px; }
+    .main-banner .shapes-bg #triangle {
+      top: 50px;
+      right: 200px; }
+    .main-banner .shapes-bg #diamond {
+      bottom: 10px;
+      left: 250px; }
   .main-banner blockquote {
     text-align: center;
     width: 50%;
@@ -184,3 +225,146 @@ header {
     background: none;
     padding: 10px 50px;
     margin: 30px; }
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .skills-container .skill-item {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #212121;
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+  .skills-container .fa-android {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100%;
+    font-size: 100px;
+    margin: 0 auto; }
+  .skills-container h3, .skills-container p, .skills-container button {
+    grid-column-start: 2;
+    grid-column-end: 5; }
+  .skills-container h3 {
+    font-size: 30px; }
+  .skills-container button {
+    padding: 10px;
+    width: 50%;
+    height: 50%; }
+
+.projects-section {
+  background: url("../images/pattern-dots-vertical.png") no-repeat; }
+
+.projects {
+  text-align: center;
+  position: relative; }
+  .projects .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+    margin: 50px 0; }
+    .projects .projects-container .project-item {
+      background: lightgrey;
+      width: 100%;
+      height: 200px;
+      border: 1px solid black; }
+    .projects .projects-container .middle-project {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      height: 100%; }
+  .projects button {
+    background: none;
+    padding: 10px 50px;
+    margin: 30px auto; }
+  .projects #squiggle {
+    top: 20px;
+    right: 150px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center; }
+  .stats h3 {
+    font-size: 48px; }
+  .stats h5 {
+    font-size: 20px; }
+  .stats .stat1 {
+    color: #2246e8; }
+  .stats .stat2 {
+    color: #ffcd00; }
+  .stats .stat3 {
+    color: #d12026; }
+  .stats .stat4 {
+    color: #00d8ff; }
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .about-me .profile-pic {
+    background: grey; }
+
+.coding-languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px; }
+  .coding-languages .code-logo {
+    text-align: center; }
+  .coding-languages img, .coding-languages i {
+    font-size: 100px;
+    height: 100px;
+    opacity: 0.3;
+    filter: grayscale(100%);
+    transition: 0.3s; }
+  .coding-languages img:hover, .coding-languages i:hover {
+    filter: none;
+    transition: 0.3s;
+    opacity: 1; }
+
+.contact {
+  background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);
+  text-align: center;
+  padding: 50px 0; }
+  .contact h2 {
+    font-size: 48px; }
+  .contact p {
+    font-size: 20px; }
+  .contact .social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin: 0 auto;
+    font-size: 30px; }
+    .contact .social-media li {
+      width: 30px; }
+    .contact .social-media img {
+      height: 30px; }
+    .contact .social-media .svg-inline--fa {
+      height: 25px; }
+    .contact .social-media .fa-facebook-f:hover,
+    .contact .social-media .fa-instagram:hover,
+    .contact .social-media .fa-linkedin-in:hover,
+    .contact .social-media .fa-github:hover,
+    .contact .social-media .fa-twitter:hover,
+    .contact .social-media .fa-facebook-f,
+    .contact .social-media .fa-instagram,
+    .contact .social-media .fa-linkedin-in,
+    .contact .social-media .fa-github,
+    .contact .social-media .fa-twitter {
+      transition: 0.3s;
+      border-radius: 5px; }
+    .contact .social-media .fa-twitter:hover {
+      color: #00aced; }
+    .contact .social-media .fa-instagram:hover {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      border-radius: 5px; }
+    .contact .social-media .fa-linkedin-in:hover {
+      color: #007bb6; }
+    .contact .social-media .fa-github:hover {
+      color: #171516; }
+    .contact .social-media .fa-facebook-f:hover {
+      color: #3b5998; }

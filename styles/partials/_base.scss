@@ -1,17 +1,18 @@
-$primary-color: white;
-$secondary-color: #d12026;
-$third-color: #00d8ff;
-$forth-color: #ffcd00;
+// main heading colours
+$primary-color: #d12026;
+$secondary-color: #00d8ff;
+$third-color: #ffcd00;
+$bg-color: #0e0e0e;
 
 body {
-    background: black;
+    background: $bg-color;
     color: white;
     font-family: 'Montserrat', sans-serif;
 
 }
 
 .wrapper {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -21,11 +22,26 @@ ul, li {
 
 a {
     text-decoration: none;
-    color: $primary-color;
+    color: white;
 }
 
 button {
     background: none;
-    color: $primary-color;
+    color: white;
     border: 1px solid white;
+}
+
+h1 {
+        color: $primary-color;
+        font-size: 72px;
+        text-align: center;
+        margin: 25px;
+    }
+h4 {
+    font-size: 50px;
+}
+
+section {
+    width: 100%;
+    margin: 100px 0;
 }
