@@ -35,8 +35,10 @@ h1 {
         color: $primary-color;
         font-size: 72px;
         text-align: center;
-        margin: 25px;
-    }
+        margin: 25px auto;
+        width: 70%;
+        opacity: 0.9;
+    }   
 h4 {
     font-size: 50px;
 }

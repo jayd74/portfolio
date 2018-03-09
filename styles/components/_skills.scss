@@ -1,0 +1,90 @@
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .skill-item {
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid #212121;
+        display: grid;
+        padding: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        // grid-template-areas: 
+        //     ".fa-android h3"
+        //     ".fa-android p"
+        //     ".fa-android button";               
+    }
+    .fa-android {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 100%;
+        font-size: 100px;
+        margin: 0 auto;
+    }
+    h3, p, button {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    button {
+        padding: 10px;
+        width: 50%;
+        height: 50%;
+    }
+}
+
+.coding-languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+    .code-logo{
+        text-align: center;
+    }
+    img, i {
+        font-size: 100px;
+        height: 100px;
+        opacity: 0.3;
+        filter: grayscale(100%);  
+        transition: 0.3s;      
+    }
+    img:hover, i:hover {
+        filter: none;
+        transition: 0.3s;
+        opacity: 1;
+    }
+}
+
+@media (max-width:720px) {
+    .skills-container {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .coding-languages {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media (max-width:360px) {
+    .skills-container {
+        .skill-item {
+            grid-template-columns: 1fr 1fr;
+
+            .fa-android {
+                font-size: 75px;
+            }
+            h3 {
+                font-size: 20px;
+                height: 100%;
+            }
+            p, button{
+                grid-column-start: 1;
+
+            }
+        }
+    }
+}

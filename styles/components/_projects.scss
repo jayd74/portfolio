@@ -1,0 +1,76 @@
+
+.projects-section{
+    background: url('../images/pattern-dots-vertical.png')no-repeat;
+}
+.projects {
+    text-align: center;
+    position: relative;
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 25px;
+        margin: 50px 0;
+        .project-item {
+            background: lightgrey;
+            width: 100%;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .middle-project {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            height: 100%;
+        }
+    }
+    button {
+        background: none;
+        padding: 10px 50px;
+        margin: 30px auto;
+    }
+    #squiggle {
+        top: 20px;
+        right: 150px;
+    }
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    h3 {
+        font-size:48px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    .stat1{
+        color: #2246e8;
+    }
+    .stat2{
+        color: $third-color;
+    }
+    .stat3{
+        color: $primary-color;
+    }
+    .stat4{
+        color: $secondary-color;
+    }
+}
+
+@media (max-width:720px) {
+    .projects {
+        .projects-container {
+        grid-template-columns: 1fr 1fr;
+       
+    }
+}
+}
+
+@media (max-width: 360px) {
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+}

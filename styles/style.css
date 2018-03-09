@@ -119,6 +119,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -157,7 +161,9 @@ h1 {
   color: #d12026;
   font-size: 72px;
   text-align: center;
-  margin: 25px; }
+  margin: 25px auto;
+  width: 70%;
+  opacity: 0.9; }
 
 h4 {
   font-size: 50px; }
@@ -171,26 +177,39 @@ header {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 25px 0; }
-  header nav ul {
-    display: flex;
-    justify-content: space-around; }
-    header nav ul li {
-      padding-bottom: 10px;
-      border-bottom: 1px solid #0e0e0e;
-      transition: 0.3s; }
-    header nav ul li:hover {
-      border-bottom: 1px solid red;
-      padding-bottom: 10px;
-      transition: 0.3s; }
+  header nav {
+    grid-column-start: 2; }
+    header nav ul {
+      display: flex;
+      justify-content: space-around; }
+      header nav ul li {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #0e0e0e;
+        transition: 0.3s; }
+      header nav ul li:hover {
+        border-bottom: 1px solid red;
+        padding-bottom: 10px;
+        transition: 0.3s; }
   header #x-grey {
     top: 50px;
     left: 450px; }
+
+@media (max-width: 540px) {
+  header {
+    grid-template-columns: 1fr; }
+    header nav {
+      width: 100%; }
+      header nav li {
+        margin: 0 35px; } }
+
+@media (max-width: 360px) {
+  header nav li {
+    margin: 0 15px; } }
 
 .bg-shapes {
   position: absolute; }
 
 .main-banner {
-  background: url("../images/hello-bg.png") no-repeat left;
   text-align: center;
   position: relative;
   padding: 100px 0;
@@ -199,6 +218,12 @@ header {
     background: url("../images/dotted-half-circle.png") no-repeat right bottom;
     position: relative;
     padding: 50px 0; }
+    .main-banner .shapes-bg h2 {
+      position: relative;
+      bottom: 150px;
+      left: -70px;
+      font-size: 30px;
+      color: lightgray; }
     .main-banner .shapes-bg #square {
       top: 50px;
       left: 150px; }
@@ -226,6 +251,29 @@ header {
     padding: 10px 50px;
     margin: 30px; }
 
+@media (max-width: 1020px) {
+  .main-banner .shapes-bg h2 {
+    font-size: 20px;
+    bottom: 120px;
+    left: -50px; } }
+
+@media (max-width: 720px) {
+  .main-banner .shapes-bg h2 {
+    font-size: 25px;
+    bottom: 75px;
+    left: 0; } }
+
+@media (max-width: 540px) {
+  .main-banner .shapes-bg h2 {
+    font-size: 20px; }
+  #circle,
+  #triangle {
+    visibility: hidden; } }
+
+@media (max-width: 360px) {
+  .main-banner .shapes-bg h2 {
+    bottom: 30px; } }
+
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr; }
@@ -252,6 +300,43 @@ header {
     padding: 10px;
     width: 50%;
     height: 50%; }
+
+.coding-languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px; }
+  .coding-languages .code-logo {
+    text-align: center; }
+  .coding-languages img, .coding-languages i {
+    font-size: 100px;
+    height: 100px;
+    opacity: 0.3;
+    filter: grayscale(100%);
+    transition: 0.3s; }
+  .coding-languages img:hover, .coding-languages i:hover {
+    filter: none;
+    transition: 0.3s;
+    opacity: 1; }
+
+@media (max-width: 720px) {
+  .skills-container {
+    grid-template-columns: 100%; } }
+
+@media (max-width: 540px) {
+  .coding-languages {
+    grid-template-columns: 1fr 1fr; } }
+
+@media (max-width: 360px) {
+  .skills-container .skill-item {
+    grid-template-columns: 1fr 1fr; }
+    .skills-container .skill-item .fa-android {
+      font-size: 75px; }
+    .skills-container .skill-item h3 {
+      font-size: 20px;
+      height: 100%; }
+    .skills-container .skill-item p, .skills-container .skill-item button {
+      grid-column-start: 1; } }
 
 .projects-section {
   background: url("../images/pattern-dots-vertical.png") no-repeat; }
@@ -301,36 +386,48 @@ header {
   .stats .stat4 {
     color: #00d8ff; }
 
+@media (max-width: 720px) {
+  .projects .projects-container {
+    grid-template-columns: 1fr 1fr; } }
+
+@media (max-width: 360px) {
+  .stats {
+    grid-template-columns: 1fr 1fr; } }
+
 .about-me {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px; }
   .about-me .profile-pic {
     background: grey; }
+  .about-me .bio {
+    padding: 25px; }
+    .about-me .bio h4 {
+      margin: 25px 0; }
 
-.coding-languages {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 50px; }
-  .coding-languages .code-logo {
-    text-align: center; }
-  .coding-languages img, .coding-languages i {
-    font-size: 100px;
-    height: 100px;
-    opacity: 0.3;
-    filter: grayscale(100%);
-    transition: 0.3s; }
-  .coding-languages img:hover, .coding-languages i:hover {
-    filter: none;
-    transition: 0.3s;
-    opacity: 1; }
+@media (max-width: 540px) {
+  .about-me {
+    grid-template-columns: 1fr; } }
 
 .contact {
   background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);
-  text-align: center;
-  padding: 50px 0; }
+  padding: 50px 0;
+  position: relative; }
+  .contact .contact-bg {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    width: 100%; }
   .contact h2 {
-    font-size: 48px; }
+    font-size: 48px;
+    text-align: center;
+    z-index: 2; }
+  .contact a {
+    transition: 0.3s;
+    position: relative; }
+  .contact a:hover {
+    opacity: 0.5;
+    transition: 0.3s; }
   .contact p {
     font-size: 20px; }
   .contact .social-media {
@@ -345,26 +442,47 @@ header {
       height: 30px; }
     .contact .social-media .svg-inline--fa {
       height: 25px; }
-    .contact .social-media .fa-facebook-f:hover,
-    .contact .social-media .fa-instagram:hover,
-    .contact .social-media .fa-linkedin-in:hover,
-    .contact .social-media .fa-github:hover,
-    .contact .social-media .fa-twitter:hover,
-    .contact .social-media .fa-facebook-f,
-    .contact .social-media .fa-instagram,
-    .contact .social-media .fa-linkedin-in,
-    .contact .social-media .fa-github,
-    .contact .social-media .fa-twitter {
-      transition: 0.3s;
-      border-radius: 5px; }
-    .contact .social-media .fa-twitter:hover {
-      color: #00aced; }
-    .contact .social-media .fa-instagram:hover {
-      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-      border-radius: 5px; }
-    .contact .social-media .fa-linkedin-in:hover {
-      color: #007bb6; }
-    .contact .social-media .fa-github:hover {
-      color: #171516; }
-    .contact .social-media .fa-facebook-f:hover {
-      color: #3b5998; }
+
+@media (max-width: 540px) {
+  .social-media li {
+    margin: 0 20px; } }
+
+@media (max-width: 360px) {
+  .contact h2 {
+    font-size: 30px; } }
+
+body {
+  background: #0e0e0e;
+  color: white;
+  font-family: 'Montserrat', sans-serif; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+button {
+  background: none;
+  color: white;
+  border: 1px solid white; }
+
+h1 {
+  color: #d12026;
+  font-size: 72px;
+  text-align: center;
+  margin: 25px auto;
+  width: 70%;
+  opacity: 0.9; }
+
+h4 {
+  font-size: 50px; }
+
+section {
+  width: 100%;
+  margin: 100px 0; }

@@ -1,0 +1,22 @@
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    .profile-pic {
+        background: grey;
+    }
+    .bio {
+        padding: 25px;
+        h4 {
+            margin: 25px 0;
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .about-me {
+        grid-template-columns: 1fr;
+    }
+}
+
+
