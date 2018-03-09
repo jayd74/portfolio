@@ -136,42 +136,6 @@ ul {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  background: #0e0e0e;
-  color: white;
-  font-family: 'Montserrat', sans-serif; }
-
-.wrapper {
-  max-width: 1170px;
-  margin: 0 auto; }
-
-ul, li {
-  list-style: none; }
-
-a {
-  text-decoration: none;
-  color: white; }
-
-button {
-  background: none;
-  color: white;
-  border: 1px solid white; }
-
-h1 {
-  color: #d12026;
-  font-size: 72px;
-  text-align: center;
-  margin: 25px auto;
-  width: 70%;
-  opacity: 0.9; }
-
-h4 {
-  font-size: 50px; }
-
-section {
-  width: 100%;
-  margin: 100px 0; }
-
 header {
   background: url("../images/pattern-dots.png") no-repeat right;
   display: grid;
