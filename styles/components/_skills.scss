@@ -1,6 +1,6 @@
 .skills-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     .skill-item {
         width: 100%;
         margin: 0 auto;
@@ -8,30 +8,39 @@
         display: grid;
         padding: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        // grid-template-rows: 1fr 1fr;
         // grid-template-areas: 
         //     ".fa-android h3"
         //     ".fa-android p"
-        //     ".fa-android button";               
+        //     ".fa-android button";  
+        .fa-cubes, .fa-code {
+        font-size: 50px;
+        margin: 7px 0;
+        }    
+        .ion-android-phone-portrait{
+            font-size: 70px;
+            line-height: 0;
+        }         
     }
-    .fa-android {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        height: 100%;
-        font-size: 100px;
-        margin: 0 auto;
+    .fa-cubes {
+        color: $secondary-color;
     }
-    h3, p, button {
+    .fa-code {
+        color: $primary-color;
+    }
+
+    
+    h3 {
         grid-column-start: 2;
         grid-column-end: 5;
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+        display: inline;
     }
-    h3 {
-        font-size: 30px;
-    }
-    button {
-        padding: 10px;
-        width: 50%;
-        height: 50%;
+    p {
+        grid-column-start: 1;
+        grid-column-end: 5;
     }
 }
 
@@ -47,7 +56,7 @@
         font-size: 100px;
         height: 100px;
         opacity: 0.3;
-        filter: grayscale(100%);  
+        filter: grayscale(70%);  
         transition: 0.3s;      
     }
     img:hover, i:hover {
@@ -60,6 +69,9 @@
 @media (max-width:720px) {
     .skills-container {
         grid-template-columns: 100%;
+    }
+    .coding-languages {
+        grid-gap: 10px;
     }
 }
 

@@ -1,14 +1,26 @@
 .about-me{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 50px;
+    display: flex;
     .profile-pic {
-        background: grey;
+        margin-left: 100px;
+        img {
+            width: 70%;
+            border: 3px solid white;
+        }
     }
     .bio {
-        padding: 25px;
+        padding: 0 25px;
         h4 {
             margin: 25px 0;
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        .profile-pic {
+            margin: 0 auto;
         }
     }
 }
