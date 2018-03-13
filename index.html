@@ -19,16 +19,16 @@
 
     <!-- <div class="wrapper"> -->
 
-        <header>
+        <header id="top">
 
             <img src="images/x-grey.png" alt="" class="bg-shapes" id="x-grey">
 
             <nav>
                 <ul>
                     <li><a href="#">home</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#about" id="toAbout">about</a></li>
+                    <li><a href="#projects" id="toProjects">projects</a></li>
+                    <li><a href="#contact" id="toContact">contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,8 +36,6 @@
             <div class="shapes-bg">
                 <div class="wrapper">
                     <h1><img src="images/JasonDu_white.svg" alt="Jason Du"></h1>
-                    <!-- <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus cumque quidem ea aperiam cum facilis voluptates explicabo doloremque provident ipsa!</blockquote>
-                    <button>contact</button> -->
                 </div>    
                 <!-- background shapes for design -->
                 <h2>Front End Developer</h2>
@@ -51,7 +49,7 @@
             </div>
         </section>
         
-        <!-- <i class="fas fa-arrow-circle-down"></i> -->
+        <a href="#top" id="toTop"><i class="fas fa-arrow-circle-down"></i></a>
 
         <section class="about" id="about">
             <div class="wrapper about-me" data-aos="zoom-in">
@@ -179,7 +177,7 @@
             <div class="wrapper stats" data-aos="zoom-in">
 
                 <div class="stat-item">
-                    <h3 class="stat1">123</h3>
+                    <h3 class="stat1">283</h3>
                     <h5>Wakatime Hours</h5>
                 </div>
                 <div class="stat-item">
@@ -218,28 +216,28 @@
         </section>
 
         <section class="languages">
-            <div class="wrapper coding-languages" data-aos="fade-up">
+            <div class="wrapper coding-languages">
 
-                <div class="code-logo"><img src="images/html5.svg" alt="logo for html"></div>
-                <div class="code-logo"><img src="images/css3.svg" alt="logo for css"></div>
-                <div class="code-logo"><i class="devicon-jquery-plain-wordmark colored"></i>
+                <div class="code-logo" data-aos="flip-up"><img src="images/html5.svg" alt="logo for html"></div>
+                <div class="code-logo" data-aos="flip-up"><img src="images/css3.svg" alt="logo for css"></div>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-jquery-plain-wordmark colored"></i>
                 </div>
-                <div class="code-logo"><i class="devicon-javascript-plain colored"></i>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-javascript-plain colored"></i>
                 </div>
-                <div class="code-logo"><i class="devicon-react-original-wordmark colored"></i>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-react-original-wordmark colored"></i>
                 </div>
-                <div class="code-logo"><i class="devicon-github-plain-wordmark"></i>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-github-plain-wordmark"></i>
                 </div>
-                <div class="code-logo"><img src="images/firebase.svg" alt="logo for firebase"></div>
-                <div class="code-logo"><i class="devicon-sass-original colored"></i>
+                <div class="code-logo" data-aos="flip-up"><img src="images/firebase.svg" alt="logo for firebase"></div>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-sass-original colored"></i>
                 </div>
-                <div class="code-logo"><i class="devicon-gulp-plain colored"></i>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-gulp-plain colored"></i>
                 </div>
-                <div class="code-logo"><img src="images/vscode.svg" alt="logo for vscode">
+                <div class="code-logo" data-aos="flip-up"><img src="images/vscode.svg" alt="logo for vscode">
                 </div>
             </div>
         </section>
-        <footer class="contact">
+        <footer class="contact" id="contact">
                 <img src="images/contact-bg.png" alt="contact" class="contact-bg">
                 <div class="wrapper">
                     <!-- <p>hit me up at</p> -->
@@ -257,13 +255,7 @@
     <!-- </div> end wrapper -->
 <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<!-- <script>
-    AOS.init();
-</script> -->
-<!-- <script src="js/wow.min.js"></script> -->
-<!-- <script>
-        new WOW().init();
-</script> -->
+
 <script src="js/script.js"></script>
 </body>
 </html>

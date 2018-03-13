@@ -1,7 +1,6 @@
 .about-me{
     display: flex;
     .profile-pic {
-        margin-left: 100px;
         img {
             width: 70%;
             border: 3px solid white;
@@ -12,9 +11,13 @@
     }
     .bio {
         padding: 0 25px;
+        p {
+            line-height: 30px;
+        }
         h4 {
             margin: 25px 0;
         }
+        
     }
 }
 
