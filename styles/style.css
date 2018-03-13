@@ -165,7 +165,7 @@ header {
     header nav {
       width: 100%; }
       header nav li {
-        margin: 0 35px; }
+        margin: 0 15px; }
   #x-grey {
     display: none; } }
 
@@ -501,6 +501,8 @@ header {
       height: 25px; }
 
 @media (max-width: 540px) {
+  .contact h2 {
+    font-size: 40px; }
   .social-media li {
     margin: 0 20px; } }
 
