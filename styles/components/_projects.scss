@@ -17,9 +17,10 @@
         .project-img {
             padding: 25px 0;
             text-align: center;
+            width: 100%;
             img {
                 width: 100%;
-                margin: 30px 0;            
+                // margin: 30px;            
         }
             a {
                 padding: 10px 20px;
@@ -27,26 +28,49 @@
             }
         }
         .project-info {
-            margin: 0 50px;
+            margin: 0 25px;
             padding: 25px;
-
+            width: 100%;
+            p {
+                line-height: 27px;
+            }
         }
         h3 {
             font-size: 30px;
-            text-align: center;
+            margin-bottom: 0;
         }
         
         .project-alt {
             flex-direction: row-reverse;
         }
+        ul{
+            margin: 0 auto 20px;
+        }
         .project-code li{
             display: inline;
-            font-size: 20px;
-            border-right: 2px solid white;
-            padding: 0 20px;
+            font-size: 14px;
+            // padding: 0 20px;
+            text-transform: uppercase;
         }
-        .project-code li:first-child {
-            border-left: 2px solid white;
+        .project-code li::after {
+            content: ' • ';
+            padding: 5px;        
+        }
+        .project-code li:last-child::after {
+            content: "";
+        }
+        a {
+            border: 1px solid white;
+            padding: 5px 10px;
+            font-size: 14px;
+            margin-right: 5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        a:hover{
+            background:white;
+            transition: 0.3s;
+            color: black;
         }
     }
     #squiggle {
@@ -85,9 +109,11 @@
             .project-img {
                 width: 75%;
                 margin: 0 auto;
+                text-align: center;
             }
             .project-info {
                 text-align: center;
+                margin: 0;
             }
         }  
     }
@@ -96,15 +122,27 @@
     }
 }
 
-@media (max-width:720px) {
-
-        .projects .projects-container .project-info {
-            margin: 0 25px;
+@media (max-width: 960px) {
+    .projects-container .project-img img {
+            margin: 0;
         }
+    
+    .project-info {
+        p{
+            width: 75%;
+            margin: 35px auto;
+        }
+    }
 }
 
 @media (max-width: 540px) {
+    .projects .projects-container .project-img img {
+        margin: 0;
+    }
     .projects .projects-container .project-info {
             margin: 0px;
         }
-}
+    }
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }   

@@ -28,7 +28,7 @@ header {
 
 @media (max-width:540px) {
     header {
-        grid-template-columns: 1fr;
+        display: block;
         nav {
             width: 100%;
             li {
@@ -36,12 +36,16 @@ header {
             }
         }
     }
+    #x-grey {
+        display: none;
+    }
 }
 
 @media (max-width:360px) {
     header {
         nav li {
-            margin: 0 15px;
+            margin: 0 10px;
         }
     }
 }
+

@@ -6,11 +6,10 @@
     // background: url('../images/hello-bg.png') no-repeat left;
     text-align: center;
     position: relative;
-    padding: 100px 0;
+    padding-top: 100px;
     margin: 0;
     .shapes-bg {
         background: url('../images/dotted-half-circle.png') no-repeat right bottom;
-        }
         position: relative;
         padding: 50px 0;
         img {
@@ -58,6 +57,7 @@
         padding: 10px 50px;
         margin: 30px;
     }
+}
 
 
 @media (max-width:1020px) {
@@ -74,6 +74,9 @@
         bottom: 75px;
         left: 0;
     }
+    // .shapes-bg {
+    //     display: none;
+    // }
 }
 
 @media (max-width: 540px) {

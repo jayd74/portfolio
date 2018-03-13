@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="styles/plugins/animate.css">
+    <!-- <link rel="stylesheet" href="bower_components/aos/dist/aos.css" /> -->
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     
     <title>Jason Du Portfolio</title>
@@ -47,54 +50,36 @@
                 <!-- end background shapes -->
             </div>
         </section>
+        
+        <!-- <i class="fas fa-arrow-circle-down"></i> -->
 
         <section class="about" id="about">
             <div class="wrapper about-me">
-                <div class="profile-pic">
-                    <img src="images/jasondu.jpg" alt="asian guy named jason du">
-                </div>
+                <figure class="profile-pic">
+                    <img src="images/jasondu.jpg" alt="profile image for jason du">
+                    <figcaption>Photo By:
+                    <a href="https://twitter.com/pamlau" target="_blank">Pam Lau</a>
+                    </figcaption>
+                </figure>
                 <div class="bio">
                     <h4>About Me</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque nemo dolore est aliquid accusamus officiis deserunt
-                        quidem, excepturi temporibus, placeat quo ad. Excepturi perferendis itaque dolore blanditiis accusamus error
-                        est modi necessitatibus consequuntur quos! Repellat necessitatibus similique animi a inventore mollitia,
-                        dolore perferendis voluptates veniam vero, voluptatem non maxime molestiae?</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="skills">
-            <div class="wrapper skills-container">
-                <div class="skill-item">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto ex, voluptatem quaerat soluta omnis.</p>
-                </div>
-                <div class="skill-item">
-                    <!-- <i class="fas fa-mobile"></i> -->
-                    <i class="icon ion-android-phone-portrait"></i>
+                    <p>
+                        I’m Jason Du, a front end developer based in Toronto. I enjoy developing challenging web applications and solving complex coding problems. I have a background in telecom sales and have plenty of client facing experience. When I am not coding you’ll find me at your local restaurant trying new foods, playing volleyball, softball or basketball.
+                    </p>
 
-                    <h3>Responsive Design</h3>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto ex, voluptatem quaerat soluta omnis.</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-cubes"></i>
-                    <h3>API Implementation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto ex, voluptatem quaerat soluta omnis.</p>
                 </div>
             </div>
         </section>
-        
+          
         <section class="projects-section" id="projects">
         <div class="wrapper projects"> 
                 <img src="images/squiggle.png" alt="" class="bg-shapes" id="squiggle">
 
                 <h4>Projects</h4>
                 <div class="projects-container">
-                    <div class="project-item">
+                    <div class="project-item wow slideInLeft">
                         <div class="project-img">
-                            <img src="images/pew-mockups.png" alt="">
+                            <img src="images/pew-mockups.png" alt="mockups for pew target game project">
                         </div>
                         <div class="project-info">
                             <h3 class="pew-project">Point Eradicate Win</h3>
@@ -103,14 +88,15 @@
                                 <li>jQuery</li>
                                 <li>Javascript</li>
                             </ul>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quod placeat consectetur odit impedit magni molestias, ipsam doloremque distinctio voluptas? Sapiente dolorum accusantium sit nemo, neque odit quo eaque mollitia laboriosam ad dicta iure veritatis optio tenetur. Commodi obcaecati dicta odio vero iste, beatae repellat, aspernatur accusamus eveniet laudantium possimus!</p>
-                            <a href="">View Live</a>
-                            <a href="">View GitHub</a>
+                            <p>PEW is built using javascript and jquery. The objective of the game is to eliminate 10 aliens using your mouse pointer. Don’t forget to reload your bullets!
+                            </p>
+                            <a href="https://jayd74.github.io/PEW-Game/" target"_blank">View Live</a>
+                            <a href="https://github.com/jayd74/PEW-Game" target"_blank">View GitHub</a>
                         </div>
                     </div>
                     <div class="project-item project-alt">
                         <div class="project-img">
-                            <img src="images/boozestudio-mockups.png" alt="">
+                            <img src="images/boozestudio-mockups.png" alt="mockups for pew project">
                         </div>
                         <div class="project-info">
                             <h3 class="booze-project">Booze Studio</h3>
@@ -120,14 +106,16 @@
                                 <li>Javascript</li>
                                 <li>API</li>
                             </ul>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quod placeat consectetur odit impedit magni molestias, ipsam doloremque distinctio voluptas? Sapiente dolorum accusantium sit nemo, neque odit quo eaque mollitia laboriosam ad dicta iure veritatis optio tenetur. Commodi obcaecati dicta odio vero iste, beatae repellat, aspernatur accusamus eveniet laudantium possimus!</p>
-                            <a href="">View Live</a>
-                            <a href="">View GitHub</a>
+                            <p>
+                                Going to karaoke and don’t know what song to choose? Booze Studio got you covered. Do the simple quiz to find the perfect song choice! We even paired it up with a type of liquid courage to make sure your performance at its best! Using MusixMatch API, we were able to get the song lyrics to the specific song, and the LCBO API to find their products.
+                            </p>
+                            <a href="https://esther-jason.github.io/dudell/" target="-blank">View Live</a>
+                            <a href="https://github.com/esther-jason/dudell" target="-blank">View GitHub</a>
                         </div>
                     </div>
                     <div class="project-item ">
                         <div class="project-img">
-                            <img src="images/jaysfordays-mockups.png" alt="">
+                            <img src="images/jaysfordays-mockups.png" alt="mockups for jays for days project">
                         </div>
                         <div class="project-info">
                             <h3 class="jays-project">Jays For Days</h3>
@@ -138,14 +126,16 @@
                                 <li>Firebase</li>
 
                             </ul>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quod placeat consectetur odit impedit magni molestias, ipsam doloremque distinctio voluptas? Sapiente dolorum accusantium sit nemo, neque odit quo eaque mollitia laboriosam ad dicta iure veritatis optio tenetur. Commodi obcaecati dicta odio vero iste, beatae repellat, aspernatur accusamus eveniet laudantium possimus!</p>
-                            <a href="">View Live</a>
-                            <a href="">View GitHub</a>
+                            <p>
+                                A checklist for Jordan Collectors. Make an account, check off the shoe that you obtained. You can also add the colourway that you own as well. This application is built using ReactJS and the database is built and stored on Firebase.
+                            </p>
+                            <a href="https://jayd74.github.io/jays-for-days/" target="_blank">View Live</a>
+                            <a href="https://github.com/jayd74/jays-for-days" target="_blank">View GitHub</a>
                         </div>
                     </div>
                     <div class="project-item project-alt">
                         <div class="project-img">
-                            <img src="images/hackedin-mockups.png" alt="">
+                            <img src="images/hackedin-mockups.png" alt="mockups for hackedin project">
                         </div>
                         <div class="project-info">
                             <h3 class="hackedin-project">HackedIn</h3>
@@ -155,14 +145,16 @@
                                 <li>Firebase</li>
                                 <li>API</li>
                             </ul>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quod placeat consectetur odit impedit magni molestias, ipsam doloremque distinctio voluptas? Sapiente dolorum accusantium sit nemo, neque odit quo eaque mollitia laboriosam ad dicta iure veritatis optio tenetur. Commodi obcaecati dicta odio vero iste, beatae repellat, aspernatur accusamus eveniet laudantium possimus!</p>
-                            <a href="">View Live</a>
-                            <a href="">View GitHub</a>
+                            <p>
+                                HackedIn will help you find the Front end Developer job in your city. Simply type in your city and bunch of results will show. You can also save a job you like for later and also create and send your application. HackedIn is built using ReactJS and your account information is all stored onto Firebase. Using the Indeed API, We were able to get up to date postings.
+                            </p>
+                            <a href="https://hyjobsearchapp.firebaseapp.com/" target="_blank">View Live</a>
+                            <a href="https://github.com/jayd74/jobSearch" target="_blank">View GitHub</a>
                         </div>
                     </div>
                     <div class="project-item">
                         <div class="project-img">
-                            <img src="images/advisory-mockups.png" alt="">
+                            <img src="images/advisory-mockups.png" alt="mockups for advisory project">
                         </div>
                         <div class="project-info">
                             <h3 class="advisory-project">Advisory Business Solutions</h3>
@@ -172,9 +164,11 @@
                                 <li>SASS</li>
                                 <li>PSD</li>
                             </ul>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quod placeat consectetur odit impedit magni molestias, ipsam doloremque distinctio voluptas? Sapiente dolorum accusantium sit nemo, neque odit quo eaque mollitia laboriosam ad dicta iure veritatis optio tenetur. Commodi obcaecati dicta odio vero iste, beatae repellat, aspernatur accusamus eveniet laudantium possimus!</p>
-                            <a href="">View Live</a>
-                            <a href="">View GitHub</a>
+                            <p>
+                                This project is a PSD conversation. It’s a one page web page compiled using SASS. It’s responsive and works on all devices.
+                            </p>
+                            <a href="https://jayd74.github.io/advisory/" target="_blank">View Live</a>
+                            <a href="https://github.com/jayd74/advisory" target="_blank">View GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -189,16 +183,36 @@
                     <h5>Wakatime Hours</h5>
                 </div>
                 <div class="stat-item">
-                    <h3 class="stat2">123</h3>
+                    <h3 class="stat2">334</h3>
                     <h5>Coffees Consumed</h5>
                 </div>
                 <div class="stat-item">
-                    <h3 class="stat3">123</h3>
+                    <h3 class="stat3">239</h3>
                     <h5>Walks Taken</h5>
                 </div>
                 <div class="stat-item">
-                    <h3 class="stat4">123</h3>
-                    <h5>High Fives</h5>
+                    <h3 class="stat4">129</h3>
+                    <h5>Cookies Eaten</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="wrapper skills-container">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                </div>
+                <div class="skill-item">
+                    <!-- <i class="fas fa-mobile"></i> -->
+                    <i class="icon ion-android-phone-portrait"></i>
+        
+                    <h3>Responsive Design</h3>
+        
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cubes"></i>
+                    <h3>API Implementation</h3>
                 </div>
             </div>
         </section>
@@ -242,6 +256,14 @@
         </footer>
     <!-- </div> end wrapper -->
 <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+<!-- <script src="bower_components/aos/dist/aos.js"></script> -->
+<!-- <script>
+    AOS.init();
+</script> -->
+<script src="js/wow.min.js"></script>
+<!-- <script>
+        new WOW().init();
+</script> -->
 <script src="js/script.js"></script>
 </body>
 </html>
