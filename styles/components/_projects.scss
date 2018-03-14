@@ -110,28 +110,22 @@
                 width: 75%;
                 margin: 0 auto;
                 text-align: center;
+                img {
+                    margin: 0;
+                }
             }
             .project-info {
                 text-align: center;
                 margin: 0;
+                p {
+                    width: 75%;
+                    margin: 35px auto;
+                }
             }
         }  
     }
     .projects .projects-container .project-alt {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 960px) {
-    .projects-container .project-img img {
-            margin: 0;
-        }
-    
-    .project-info {
-        p{
-            width: 75%;
-            margin: 35px auto;
-        }
     }
 }
 
@@ -145,4 +139,10 @@
     .stats {
             grid-template-columns: 1fr 1fr;
         }   
+    }
+
+    @media (max-width:360px) {
+        .stats {
+            font-size: 36px;
+        }
     }
