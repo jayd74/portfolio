@@ -20,6 +20,7 @@
         .ion-android-phone-portrait{
             font-size: 70px;
             line-height: 0;
+            text-align: center;
         }         
     }
     .fa-cubes {
@@ -104,18 +105,32 @@
             margin: 25px;
         }
     }
+    .skills-container {
+        .skill-item{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;            
+        }            
+        h3{
+            margin: 15px;
+        }
+    }
 }
 
 @media (max-width:360px) {
     .skills-container {
         .skill-item {
-            grid-template-columns: 1fr 1fr;
-
-            .fa-android {
-                font-size: 75px;
+             .fa-cubes, .fa-code {
+                grid-column-start: 1;
+                font-size: 40px;
+                margin: 15px 0;
             }
+            .ion-android-phone-portrait {
+                grid-column-start: 1;
+                font-size: 50px;
+                margin: 15px 10px;
+            }   
             h3 {
-                font-size: 20px;
+                grid-column-start: 2;
+                font-size: 18px;
                 height: 100%;
             }
             p, button{

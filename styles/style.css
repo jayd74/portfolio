@@ -264,7 +264,8 @@ header {
       margin: 7px 0; }
     .skills-container .skill-item .ion-android-phone-portrait {
       font-size: 70px;
-      line-height: 0; }
+      line-height: 0;
+      text-align: center; }
   .skills-container .fa-cubes {
     color: #00d8ff; }
   .skills-container .fa-code {
@@ -321,18 +322,27 @@ header {
   .coding-languages {
     grid-template-columns: 1fr 1fr; }
     .coding-languages .code-logo {
-      margin: 25px; } }
+      margin: 25px; }
+  .skills-container .skill-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .skills-container h3 {
+    margin: 15px; } }
 
 @media (max-width: 360px) {
-  .skills-container .skill-item {
-    grid-template-columns: 1fr 1fr; }
-    .skills-container .skill-item .fa-android {
-      font-size: 75px; }
-    .skills-container .skill-item h3 {
-      font-size: 20px;
-      height: 100%; }
-    .skills-container .skill-item p, .skills-container .skill-item button {
-      grid-column-start: 1; } }
+  .skills-container .skill-item .fa-cubes, .skills-container .skill-item .fa-code {
+    grid-column-start: 1;
+    font-size: 40px;
+    margin: 15px 0; }
+  .skills-container .skill-item .ion-android-phone-portrait {
+    grid-column-start: 1;
+    font-size: 50px;
+    margin: 15px 10px; }
+  .skills-container .skill-item h3 {
+    grid-column-start: 2;
+    font-size: 18px;
+    height: 100%; }
+  .skills-container .skill-item p, .skills-container .skill-item button {
+    grid-column-start: 1; } }
 
 .projects-section {
   background: url("../images/pattern-dots-vertical.png") no-repeat; }
@@ -424,7 +434,8 @@ header {
       margin: 0; }
       .projects-container .project-item .project-info p {
         width: 75%;
-        margin: 35px auto; }
+        margin: 35px auto;
+        text-align: left; }
   .projects .projects-container .project-alt {
     flex-direction: column; } }
 
@@ -458,14 +469,15 @@ header {
   .about-me {
     width: 90%; }
     .about-me .bio h4 {
-      margin: 0 0 25px 0; } }
+      margin: 0 0 25px 0;
+      text-align: center; } }
 
 @media (max-width: 720px) {
   .about-me {
-    flex-direction: column;
-    text-align: center; }
+    flex-direction: column; }
     .about-me .profile-pic {
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-align: center; }
     .about-me .bio h4 {
       margin: 25px 0; } }
 

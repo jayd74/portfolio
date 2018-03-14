@@ -26,6 +26,7 @@
         width: 90%;
         .bio h4 {
             margin:0 0 25px 0;
+            text-align: center;
         }
     }
 }
@@ -33,9 +34,9 @@
 @media (max-width:720px) {
     .about-me {
         flex-direction: column;
-        text-align: center;
         .profile-pic {
             margin: 0 auto;
+            text-align: center;
         }
         .bio h4 {
             margin: 25px 0;
