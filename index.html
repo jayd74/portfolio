@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116624891-1"></script>
     <title>Jason Du Portfolio</title>
 </head>
 <body>
@@ -59,7 +61,7 @@
                 <div class="bio">
                     <h4>About Me</h4>
                     <p>
-                        I’m Jason Du, a front end developer based in Toronto. I enjoy developing challenging web applications and solving complex coding problems. I have a background in telecom sales and have plenty of client facing experience. When I am not coding you’ll find me at your local restaurant trying new foods, playing volleyball, softball or basketball.
+                        I’m Jason Du, a front end developer based in Toronto. I enjoy creating interactive web applications and solving complex coding problems. I have a background in telecom sales and have plenty of client facing experience. When I am not coding you’ll find me at your local restaurant trying new foods, or playing volleyball, softball or basketball.
                     </p>
 
                 </div>
@@ -72,6 +74,24 @@
 
                 <h4>Projects</h4>
                 <div class="projects-container">
+                    <div class="project-item project-alt" data-aos="fade-right">
+                        <div class="project-img">
+                            <img src="images/loafnotes-mockups.png" alt="mockups for loaf notes project">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="loafnotes-project">Loaf Notes</h3>
+                            <ul class="project-code">
+                                <li>React</li>
+                                <li>Firebase</li>
+                                <li>Google Authentication</li>
+                                <li>Sass</li>
+                            </ul>
+                            <p>A diary for bread bakers to document their delicious bread. Used to track how you made each loaf and how it turned out. Built using React and Google Authentication to store the entries to your own unique account on Firebase.
+                            </p>
+                            <a href="https://bread-diary.firebaseapp.com/" target="_blank">View Live</a>
+                            <a href="https://github.com/jayd74/bread-diary" target="_blank">View GitHub</a>
+                        </div>
+                    </div>
                     <div class="project-item" data-aos="fade-right">
                         <div class="project-img">
                             <img src="images/pew-mockups.png" alt="mockups for pew target game project">
@@ -85,8 +105,8 @@
                             </ul>
                             <p>PEW is built using javascript and jquery. The objective of the game is to eliminate 10 aliens using your mouse pointer. Don’t forget to reload your bullets!
                             </p>
-                            <a href="https://jayd74.github.io/PEW-Game/" target"_blank">View Live</a>
-                            <a href="https://github.com/jayd74/PEW-Game" target"_blank">View GitHub</a>
+                            <a href="https://jayd74.github.io/PEW-Game/" target="_blank">View Live</a>
+                            <a href="https://github.com/jayd74/PEW-Game" target="_blank">View GitHub</a>
                         </div>
                     </div>
                     <div class="project-item project-alt" data-aos="fade-right">
@@ -171,41 +191,41 @@
         </section>
 
         <section class="stats-section">
-            <div class="wrapper stats" data-aos="zoom-in">
+            <div class="wrapper stats">
 
-                <div class="stat-item">
-                    <h3 class="stat1">283</h3>
-                    <h5>Wakatime Hours</h5>
+                <div class="stat-item" data-aos="zoom-in">
+                    <h3 class="stat1">372</h3>
+                    <h5>Coding Hours</h5>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item" data-aos="zoom-in">
                     <h3 class="stat2">334</h3>
                     <h5>Coffees Consumed</h5>
                 </div>
-                <div class="stat-item">
-                    <h3 class="stat3">239</h3>
+                <div class="stat-item" data-aos="zoom-in">
+                    <h3 class="stat3">286</h3>
                     <h5>Walks Taken</h5>
                 </div>
-                <div class="stat-item">
-                    <h3 class="stat4">129</h3>
+                <div class="stat-item" data-aos="zoom-in">
+                    <h3 class="stat4">143</h3>
                     <h5>Cookies Eaten</h5>
                 </div>
             </div>
         </section>
 
         <section class="skills">
-            <div class="wrapper skills-container" data-aos="fade-up">
-                <div class="skill-item">
+            <div class="wrapper skills-container">
+                <div class="skill-item" data-aos="fade-up">
                     <i class="fas fa-code"></i>
                     <h3>Web Development</h3>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item" data-aos="fade-up">
                     <!-- <i class="fas fa-mobile"></i> -->
                     <i class="icon ion-android-phone-portrait"></i>
         
                     <h3>Responsive Design</h3>
         
                 </div>
-                <div class="skill-item">
+                <div class="skill-item" data-aos="fade-up">
                     <i class="fas fa-cubes"></i>
                     <h3>API Implementation</h3>
                 </div>
@@ -215,23 +235,16 @@
         <section class="languages">
             <div class="wrapper coding-languages">
 
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-babel-plain colored"></i></div>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-javascript-plain colored"></i></div>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-react-original-wordmark colored"></i></div>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-jquery-plain-wordmark colored"></i></div>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-sass-original colored"></i></div>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-github-plain-wordmark"></i></div>
+                <div class="code-logo" data-aos="flip-up"><i class="devicon-gulp-plain colored"></i></div>
+                <div class="code-logo" data-aos="flip-up"><img src="images/firebase.svg" alt="logo for firebase"></div>
                 <div class="code-logo" data-aos="flip-up"><img src="images/html5.svg" alt="logo for html"></div>
                 <div class="code-logo" data-aos="flip-up"><img src="images/css3.svg" alt="logo for css"></div>
-                <div class="code-logo" data-aos="flip-up"><i class="devicon-jquery-plain-wordmark colored"></i>
-                </div>
-                <div class="code-logo" data-aos="flip-up"><i class="devicon-javascript-plain colored"></i>
-                </div>
-                <div class="code-logo" data-aos="flip-up"><i class="devicon-react-original-wordmark colored"></i>
-                </div>
-                <div class="code-logo" data-aos="flip-up"><i class="devicon-github-plain-wordmark"></i>
-                </div>
-                <div class="code-logo" data-aos="flip-up"><img src="images/firebase.svg" alt="logo for firebase"></div>
-                <div class="code-logo" data-aos="flip-up"><i class="devicon-sass-original colored"></i>
-                </div>
-                <div class="code-logo" data-aos="flip-up"><i class="devicon-gulp-plain colored"></i>
-                </div>
-                <div class="code-logo" data-aos="flip-up"><img src="images/vscode.svg" alt="logo for vscode">
-                </div>
             </div>
         </section>
         <footer class="contact" id="contact">
@@ -240,11 +253,11 @@
                     <!-- <p>hit me up at</p> -->
                     <h2><a href="mailto:hello@jasondu.ca">hello@jasondu.ca</a></h2>
                     <ul class="social-media">
-                        <li><a href="https://twitter.com/jasondu7" target="_blank"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="https://www.instagram.com/jaydu_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/jasondu7" target="_blank"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/jason-du-02496417/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://angel.co/jasondu7?public_profile=1" target="_blank"><i class="fab fa-angellist"></i></a></li>
                         <li><a href="https://github.com/jayd74" target="_blank"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://www.facebook.com/jason.du7" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -252,8 +265,14 @@
     <!-- </div> end wrapper -->
 <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-
 <script src="js/script.js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116624891-1');
+</script>
 </body>
 </html>
 
