@@ -21,12 +21,13 @@
             img {
                 width: 100%;
                 // margin: 30px;            
-        }
-            a {
-                padding: 10px 20px;
-                border: 2px solid white;
             }
         }
+                a {
+                padding: 10px 20px;
+                border: 2px solid white;
+                background:$bg-color;
+                }
         .project-info {
             margin: 0 25px;
             padding: 25px;

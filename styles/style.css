@@ -363,9 +363,10 @@ header {
       width: 100%; }
       .projects .projects-container .project-img img {
         width: 100%; }
-      .projects .projects-container .project-img a {
-        padding: 10px 20px;
-        border: 2px solid white; }
+    .projects .projects-container a {
+      padding: 10px 20px;
+      border: 2px solid white;
+      background: #0e0e0e; }
     .projects .projects-container .project-info {
       margin: 0 25px;
       padding: 25px;
